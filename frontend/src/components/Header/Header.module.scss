@@ -8,7 +8,7 @@
 
 header {
 	width: 100%;
-	background-color: var(--dark-blue);
+	background-color: #0a1930;
 	color: #fff;
 
 	.header {
@@ -68,7 +68,7 @@ header {
 				color: orangered;
 			}
 			&.active {
-				color: var(--color-danger);
+				color: #ff4500;
 			}
 			p {
 				position: absolute;
@@ -111,7 +111,7 @@ header {
 			left: 0;
 			width: 50%;
 			height: 100vh;
-			background-color: var(--dark-blue);
+			background-color: #0a1930;
 			padding: 1rem;
 			z-index: 999;
 			transform: translateX(-200%);
@@ -215,7 +215,7 @@ header {
 
 .active {
 	position: relative;
-	color: var(--color-danger);
+	color: #ff4500;
 }
 
 .active::after {
