@@ -30,7 +30,13 @@ const data = [
 ];
 
 const HomeInfoBox = () => {
-	return <div>HomeInfoBox</div>;
+	return (
+		<div className="infoboxes mb-8">
+			{data.map((item, index) => {
+				return <div className="infobox"></div>;
+			})}
+		</div>
+	);
 };
 
 export default HomeInfoBox;

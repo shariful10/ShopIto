@@ -29,11 +29,11 @@ const Header = () => {
 
 	const cart = (
 		<span className={styles.cart}>
-			<Link to={"/cart"} className="flex">
+			<Link to={"/cart"} className="flex group">
 				Cart
 				<div className="">
 					<FaShoppingCart size={20} />
-					<p className="text-2xl font-light leading-[1.3] text-dark">0</p>
+					<p className="text-2xl font-light leading-[1.3] text-dark group-hover:text-danger">0</p>
 				</div>
 			</Link>
 		</span>

@@ -1,7 +1,7 @@
 import "./Slider.scss";
 import { useEffect, useState } from "react";
 import { sliderData } from "./slider-data";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 
 const Slider = () => {
@@ -60,7 +60,7 @@ const Slider = () => {
 									<hr />
 									<button
 										onClick={() => navigate("/shop")}
-										className="text-[1.6rem] font-normal py-[6px] px-2 mb-5 border border-transparent rounded-[3px] cursor-pointer flex justify-center items-center transition-all duration-300 text-white bg-primary hover:translate-y-[-2px]"
+										className="text-[1.6rem] font-normal py-[6px] px-4 mb-5 border border-transparent rounded-[3px] cursor-pointer flex justify-center items-center transition-all duration-300 text-white bg-primary hover:translate-y-[-2px]"
 									>
 										Shop Now
 									</button>
