@@ -29,10 +29,12 @@ const Header = () => {
 
 	const cart = (
 		<span className={styles.cart}>
-			<Link to={"/cart"}>
+			<Link to={"/cart"} className="flex">
 				Cart
-				<FaShoppingCart size={20} />
-				<p>0</p>
+				<div className="">
+					<FaShoppingCart size={20} />
+					<p className="">0</p>
+				</div>
 			</Link>
 		</span>
 	);
@@ -43,7 +45,7 @@ const Header = () => {
 				{logo}
 				<nav
 					className={
-						showMenu ? `${styles["show-menu"]}` : `${styles["hide-menu"]}`
+						showMenu ? `${styles["show-nav"]}` : `${styles["hide-nav"]}`
 					}
 				>
 					<div
@@ -57,7 +59,12 @@ const Header = () => {
 					<ul>
 						<li className={styles["logo-mobile"]}>
 							{logo}
-							<FaTimes to={"/shop"} color="#FFF" onClick={hideMenu} />
+							<FaTimes
+								to={"/shop"}
+								size={28}
+								color="#FFF"
+								onClick={hideMenu}
+							/>
 						</li>
 						<li>
 							<NavLink to="/shop" className={activeLink}>
