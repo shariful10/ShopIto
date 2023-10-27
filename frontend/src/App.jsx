@@ -6,7 +6,9 @@ function App() {
 	return (
 		<div className="font-popins">
 			<Header />
-			<Outlet />
+			<div className="min-h-[calc(100vh-160px)]">
+				<Outlet />
+			</div>
 			<Footer />
 		</div>
 	);
