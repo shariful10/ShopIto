@@ -23,16 +23,18 @@ const Slider = () => {
 						{i === currentSlide && (
 							<>
 								<img src={image} alt="Slide" />
-                        <div className="content">
-                           <span className="span1"></span>
-                           <span className="span2"></span>
-                           <span className="span3"></span>
-                           <span className="span4"></span>
-                           <h2>{heading}</h2>
-                           <p>{desc}</p>
-                           <hr />
-                           <button className="text-[1.6rem] font-normal py-[6px] px-2 mb-5 border border-transparent rounded-[3px] cursor-pointer flex justify-center items-center transition-all duration-300 text-white bg-primary">Shop Now</button>
-                        </div>
+								<div className="content">
+									<span className="span1"></span>
+									<span className="span2"></span>
+									<span className="span3"></span>
+									<span className="span4"></span>
+									<h2>{heading}</h2>
+									<p>{desc}</p>
+									<hr />
+									<button className="text-[1.6rem] font-normal py-[6px] px-2 mb-5 border border-transparent rounded-[3px] cursor-pointer flex justify-center items-center transition-all duration-300 text-white bg-primary hover:translate-y-[-2px]">
+										Shop Now
+									</button>
+								</div>
 							</>
 						)}
 					</div>
