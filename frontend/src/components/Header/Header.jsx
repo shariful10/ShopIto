@@ -33,7 +33,7 @@ const Header = () => {
 				Cart
 				<div className="">
 					<FaShoppingCart size={20} />
-					<p className="">0</p>
+					<p className="text-2xl font-light leading-[1.3] text-dark">0</p>
 				</div>
 			</Link>
 		</span>
