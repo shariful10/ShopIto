@@ -31,6 +31,7 @@ const Slider = () => {
                            <h2>{heading}</h2>
                            <p>{desc}</p>
                            <hr />
+                           <button className="text-[1.6rem] font-normal py-[6px] px-2 mb-5 border border-transparent rounded-[3px] cursor-pointer flex justify-center items-center transition-all duration-300 text-white bg-primary">Shop Now</button>
                         </div>
 							</>
 						)}

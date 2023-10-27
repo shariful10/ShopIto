@@ -143,11 +143,6 @@ h4 {
 	font-weight: 200;
 }
 
-/* <==<<=== Text Color ===>>==> */
-/* .--text-light {
-	color: #fff;
-} */
-
 /* <==<<=== Center Text ===>>==> */
 .--text-center {
 	text-align: center;
@@ -235,20 +230,6 @@ h4 {
 	padding: 0 2rem;
 }
 
-.--btn {
-	font-size: 1.6rem;
-	font-weight: 400;
-	padding: 6px 8px;
-	margin: 0 5px 0 0;
-	border: 1px solid transparent;
-	border-radius: 3px;
-	cursor: pointer;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	transition: all 0.3s;
-}
-
 .--btn:hover {
 	transform: translateY(-2px);
 }
@@ -259,11 +240,6 @@ h4 {
 
 .--btn-block {
 	width: 100%;
-}
-
-.--btn-primary {
-	color: #fff;
-	background: #007bff;
 }
 
 .--btn-secondary {
