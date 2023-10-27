@@ -7,12 +7,19 @@ import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 const Slider = () => {
 	const navigate = useNavigate();
 	const [currentSlide, setCurrentSlide] = useState(0);
-   
+
 	const autoScroll = true;
 	const slideLength = sliderData.length;
 
-	const prevSlide = () => {};
-	const nextSlide = () => {};
+	let slideInterval;
+	const intervalTime = 5000;
+
+	const nextSlide = () => {
+		setCurrentSlide(currentSlide === slideLength - 1 ? 0 : currentSlide + 1);
+	};
+	const prevSlide = () => {
+		setCurrentSlide(currentSlide === 0 ? slideLength - 1 : currentSlide - 1);
+	};
 
 	return (
 		<div className="slider">
