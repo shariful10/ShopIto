@@ -4,11 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-section {
-	width: 100%;
-	padding: 4rem 0;
-}
-
 /* <==<<=== Flex ===>>==> */
 .--flex-center {
 	display: flex;
@@ -84,7 +79,7 @@ h3,
 h4 {
 	font-weight: 500;
 	line-height: 1.2;
-	color: var(--color-dark);
+	color: #333;
 	margin-bottom: 1rem;
 }
 
