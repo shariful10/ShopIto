@@ -18,7 +18,20 @@ export default {
 				lightBlue: "#1f93ff",
 			},
 			boxShadow: {
-				shadowBox: "0 5px 15px rgba(0, 0, 0, 0.1);",
+				box: "0 5px 15px rgba(0, 0, 0, 0.1);",
+			},
+			fontSize: {
+            h1: "4rem",
+            h2: "3rem",
+            h3: "2.5rem",
+				h4: "2rem",
+				textSm: "1.2rem",
+				textMd: "3rem",
+				textLg: "4rem",
+				textXl: "4.5rem",
+			},
+			fontWeight: {
+				fontSm: "300",
 			},
 		},
 	},

@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import { sliderData } from "./slider-data";
 import { Link, useNavigate } from "react-router-dom";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
+import P from "../P/P";
+import BtnShop from "../BtnShop/BtnShop";
 
 const Slider = () => {
 	const navigate = useNavigate();
@@ -56,16 +58,9 @@ const Slider = () => {
 									<span className="span3"></span>
 									<span className="span4"></span>
 									<h2 className="text-5xl">{heading}</h2>
-									<p className="text-2xl font-light leading-[1.3] text-dark">
-										{desc}
-									</p>
+									<P className="text-2xl font-light">{desc}</P>
 									<hr />
-									<button
-										onClick={() => navigate("/shop")}
-										className="text-[1.6rem] font-normal py-[6px] px-4 mb-5 border border-transparent rounded-[3px] cursor-pointer flex justify-center items-center transition-all duration-300 text-white bg-primary hover:translate-y-[-2px]"
-									>
-										Shop Now
-									</button>
+									<BtnShop />
 								</div>
 							</>
 						)}

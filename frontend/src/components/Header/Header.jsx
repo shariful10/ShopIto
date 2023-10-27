@@ -7,7 +7,7 @@ import { HiOutlineMenuAlt3 } from "react-icons/hi";
 export const logo = (
 	<div className={styles.logo}>
 		<Link to={"/"}>
-			<h2>
+			<h2 className="text-h2">
 				Shop<span>Ito</span>
 			</h2>
 		</Link>

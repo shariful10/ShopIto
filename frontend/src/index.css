@@ -83,31 +83,6 @@ h4 {
 	margin-bottom: 1rem;
 }
 
-h1 {
-	font-size: 4rem;
-}
-
-h3 {
-	font-size: 2.5rem;
-}
-
-.--text-xl {
-	font-size: 4.5rem;
-}
-
-.--text-lg {
-	font-size: 4rem;
-}
-
-.--text-md {
-	font-size: 3rem;
-}
-
-.--text-sm {
-	font-size: 1.2rem;
-	font-weight: 300;
-}
-
 .--text-p {
 	font-size: 1.5rem;
 	font-weight: 300;

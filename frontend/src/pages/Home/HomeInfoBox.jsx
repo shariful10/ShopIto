@@ -5,6 +5,7 @@ import {
 	BsFillCreditCardFill,
 } from "react-icons/bs";
 import { FaShippingFast } from "react-icons/fa";
+import P from "../../components/P/P";
 
 const data = [
 	{
@@ -37,7 +38,8 @@ const HomeInfoBox = () => {
 					<div key={index} className="infobox">
 						<div className="icon">{icon}</div>
 						<div className="icon">
-							<h4 className="text-[2rem]">{heading}</h4>
+							<h4 className="text-h4">{heading}</h4>
+							<P className="text-textSm font-fontSm">{text}</P>
 						</div>
 					</div>
 				);
