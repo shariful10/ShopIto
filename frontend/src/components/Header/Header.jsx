@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "./Header.module.scss";
 import { FaShoppingCart } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
+import { HiOutlineMenuAlt3 } from "react-icons/hi";
 
 export const logo = (
 	<div className={styles.logo}>
@@ -40,8 +41,23 @@ const Header = () => {
 		<header>
 			<div className={styles.header}>
 				{logo}
-				<nav>
+				<nav
+					className={
+						showMenu ? `${styles["show-menu"]}` : `${styles["hide-menu"]}`
+					}
+				>
+					<div
+						className={
+							showMenu
+								? `${styles["nav-wrapper"]} ${styles["show-nav-wrapper"]}`
+								: `${styles["nav-wrapper"]}`
+						}
+						onClick={hideMenu}
+					></div>
 					<ul>
+                  <li className={styles["logo-mobile"]}>
+                     {logo}
+                  </li>
 						<li>
 							<NavLink to="/shop" className={activeLink}>
 								Shop
