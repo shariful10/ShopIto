@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Header.module.scss";
+import { FaShoppingCart } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
 
 export const logo = (
@@ -15,6 +16,16 @@ export const logo = (
 const activeLink = ({ isActive }) => (isActive ? `${styles.active}` : "");
 
 const Header = () => {
+	const cart = (
+		<span className={styles.cart}>
+			<Link to={"/cart"}>
+				Cart
+				<FaShoppingCart size={20} />
+            <p>0</p>
+			</Link>
+		</span>
+	);
+
 	return (
 		<header>
 			<div className={styles.header}>
@@ -22,7 +33,9 @@ const Header = () => {
 				<nav>
 					<ul>
 						<li>
-							<NavLink to="/shop" className={activeLink}>Shop</NavLink>
+							<NavLink to="/shop" className={activeLink}>
+								Shop
+							</NavLink>
 						</li>
 					</ul>
 				</nav>
@@ -34,10 +47,11 @@ const Header = () => {
 						<NavLink to={"/register"} className={activeLink}>
 							Register
 						</NavLink>
-						<NavLink to={"/order-history"} className={activeLink}>
-							MyOrder
+						<NavLink to={"/order-history"} className={`${activeLink} flex`}>
+							My Order
 						</NavLink>
 					</span>
+					{cart}
 				</div>
 			</div>
 		</header>
