@@ -37,7 +37,7 @@ const HomeInfoBox = () => {
 				return (
 					<div key={index} className="infobox">
 						<div className="icon">{icon}</div>
-						<div className="icon">
+						<div className="text">
 							<h4 className="text-h4">{heading}</h4>
 							<P className="text-textSm font-fontSm">{text}</P>
 						</div>
