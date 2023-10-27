@@ -37,7 +37,7 @@
 	width: 50%;
 	// width: 500px;
 	// height: 500px;
-	padding: 3rem;
+	padding: 10rem 3rem;
 	display: flex;
 	justify-self: center;
 	align-items: center;
@@ -150,11 +150,11 @@
 @keyframes slide-up {
 	0% {
 		visibility: visible;
-		top: 23rem;
+		top: 27rem;
 	}
 	100% {
 		visibility: visible;
-		top: 17rem;
+		top: 23rem;
 	}
 }
 
