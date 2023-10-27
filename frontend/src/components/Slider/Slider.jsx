@@ -55,8 +55,10 @@ const Slider = () => {
 									<span className="span2"></span>
 									<span className="span3"></span>
 									<span className="span4"></span>
-									<h2>{heading}</h2>
-									<p className="text-2xl font-medium">{desc}</p>
+									<h2 className="text-5xl">{heading}</h2>
+									<p className="text-2xl font-light leading-[1.3] text-dark">
+										{desc}
+									</p>
 									<hr />
 									<button
 										onClick={() => navigate("/shop")}

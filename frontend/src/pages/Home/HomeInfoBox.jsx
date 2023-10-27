@@ -32,8 +32,15 @@ const data = [
 const HomeInfoBox = () => {
 	return (
 		<div className="infoboxes mb-8">
-			{data.map((item, index) => {
-				return <div className="infobox"></div>;
+			{data.map(({ index, heading, icon, text }) => {
+				return (
+					<div key={index} className="infobox">
+						<div className="icon">{icon}</div>
+						<div className="icon">
+							<h4 className="text-[2rem]">{heading}</h4>
+						</div>
+					</div>
+				);
 			})}
 		</div>
 	);
