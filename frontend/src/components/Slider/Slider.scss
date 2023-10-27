@@ -77,6 +77,7 @@
 
 	animation: span1 3s linear infinite;
 }
+
 .content .span2:before {
 	content: "";
 	position: absolute;
@@ -87,6 +88,7 @@
 	background: #50dfdb;
 	animation: span2 3s linear infinite;
 }
+
 .content .span3:before {
 	content: "";
 	position: absolute;
@@ -97,6 +99,7 @@
 	background: #50dfdb;
 	animation: span3 3s linear infinite;
 }
+
 .content .span4:before {
 	content: "";
 	position: absolute;
@@ -116,6 +119,7 @@
 		left: 100%;
 	}
 }
+
 @keyframes span2 {
 	0% {
 		right: 0%;
@@ -124,6 +128,7 @@
 		right: 100%;
 	}
 }
+
 @keyframes span3 {
 	0% {
 		top: 0%;
@@ -132,6 +137,7 @@
 		top: 100%;
 	}
 }
+
 @keyframes span4 {
 	0% {
 		bottom: 0%;
@@ -171,6 +177,7 @@
 .current .content {
 	opacity: 1;
 }
+
 .arrow {
 	border: 2px solid orangered;
 	border-radius: 50%;
@@ -193,6 +200,7 @@
 	right: 1.5rem;
 	color: orangered;
 }
+
 .prev {
 	left: 1.5rem;
 	color: orangered;
