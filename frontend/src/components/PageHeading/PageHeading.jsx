@@ -7,7 +7,7 @@ const PageHeading = ({ heading, btnText }) => {
 		<>
 			<div className="flex justify-between items-center">
 				<H2 className="font-extralight">{heading}</H2>
-				<Buttons>{btnText}</Buttons>
+				<Buttons className="bg-grey">{btnText}</Buttons>
 			</div>
 			<Hr />
 		</>

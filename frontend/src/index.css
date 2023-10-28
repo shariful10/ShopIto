@@ -111,22 +111,6 @@ h4 {
 }
 
 /* <==<<=== Margin ===>>==> */
-.--m {
-	margin: 1rem;
-}
-
-.--ml {
-	margin-left: 1rem;
-}
-
-.--mr {
-	margin-right: 1rem;
-}
-
-.--mb {
-	margin-bottom: 1rem;
-}
-
 .--my {
 	margin: 1rem 0;
 }

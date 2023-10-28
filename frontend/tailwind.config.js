@@ -21,9 +21,9 @@ export default {
 				box: "0 5px 15px rgba(0, 0, 0, 0.1);",
 			},
 			fontSize: {
-            h1: "4rem",
-            h2: "3rem",
-            h3: "2.5rem",
+				h1: "4rem",
+				h2: "3rem",
+				h3: "2.5rem",
 				h4: "2rem",
 				textSm: "1.2rem",
 				textMd: "3rem",
@@ -32,6 +32,9 @@ export default {
 			},
 			fontWeight: {
 				fontSm: "300",
+			},
+			margin: {
+				m1: "1rem",
 			},
 		},
 	},
