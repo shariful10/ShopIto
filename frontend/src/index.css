@@ -384,10 +384,10 @@ a:hover {
 	padding: 5px;
 }
 
-.--hr {
+/* .--hr {
 	border-bottom: 1px solid #ccc;
 	margin-bottom: 1rem;
-}
+} */
 
 .activeImg {
 	border: 1px solid var(--color-orange);
