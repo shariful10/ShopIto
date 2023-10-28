@@ -2,25 +2,24 @@ import "./Home.scss";
 import HomeInfoBox from "./HomeInfoBox";
 import Slider from "../../components/Slider/Slider";
 import Section from "../../components/Section/Section";
+import { productData } from "../../components/Carousel/data";
 import Container from "../../components/Container/Container";
-import H2 from "../../components/H2/H2";
-import Buttons from "../../components/Buttons/Buttons";
-import Hr from "../../components/Hr/Hr";
 import PageHeading from "../../components/PageHeading/PageHeading";
-
-// const pageHeading = ({ heading, btnText }) => {
-// 	return (
-// 		<>
-// 			<div className="flex justify-between items-center">
-// 				<H2 className="font-extralight">{heading}</H2>
-// 				<Buttons>{btnText}</Buttons>
-// 			</div>
-// 			<Hr />
-// 		</>
-// 	);
-// };
+import ProductCarousel from "../../components/Carousel/ProductCarousel";
+import CarouselItem from "../../components/Carousel/CarouselItem";
 
 const Home = () => {
+	const products = productData.map(({ id, name, imageurl, price, description }) => (
+		<div key={id} className="">
+			<CarouselItem
+				name={name}
+				url={imageurl}
+				price={price}
+				description={description}
+			/>
+		</div>
+	));
+
 	return (
 		<>
 			<Slider />
@@ -32,6 +31,7 @@ const Home = () => {
 							heading={"Latest Products"}
 							btnText={"Shop Now >>>"}
 						/>
+						<ProductCarousel products={products} />
 					</div>
 				</Container>
 			</Section>
